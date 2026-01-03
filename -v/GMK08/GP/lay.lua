@@ -1,0 +1,131 @@
+
+lay={ LinearLayout,
+  layout_width="fill",
+  layout_height="fill",
+  orientation=1,
+  id="root_lay",
+  { MaterialCardView,
+    layout_height="53dp",
+    layout_width="fill",
+    radius="0dp",
+    cardElevation="10dp",
+    strokeColor=0,strokeWidth=0,
+    { FrameLayout,
+      layout_width='fill',
+      layout_height='fill',
+      { TextView,
+        layout_gravity='center|left',
+        textSize='20dp',
+        layout_margin='10dp',
+        id="tips",
+        text=sharedData.LuaEditRun_Path:match("Files/" .. "(.+)"..".gp")..".gp" or "title",
+        Typeface=jost_book_typeface,
+      },
+      { LinearLayout,
+        orientation="0",
+        layout_height="53dp",
+        layout_width="fill",
+        gravity="center|right",
+
+        {MaterialCardView,
+          layout_width='45dp',
+          layout_height='45dp',
+          CardBackgroundColor=0,
+          radius="30dp",strokeColor=0,strokeWidth=0,
+          cardElevation="0dp",
+          layout_margin='5dp';
+          onClick=function()
+            lua_edit__.format()
+          end,
+          { AppCompatImageView,
+            layout_width='25dp',
+            layout_height='25dp',
+            layout_gravity='center',
+            src="res/format.png",
+            layout_margin='3dp',
+            colorFilter=primaryc,
+          };
+        },
+        {MaterialCardView,
+          layout_width='45dp',
+          layout_height='45dp',
+          CardBackgroundColor=0,
+          radius="30dp",strokeColor=0,strokeWidth=0,
+          cardElevation="0dp",
+          layout_margin='5dp';
+          onClick=function()
+            pop=PopupMenu(activity,top_lay)
+            menu=pop.Menu
+            menu.add(translate'运行').onMenuItemClick=function(a)
+              lua_edit__.save()
+              activity.newActivity("GP/run")
+            end
+            menu.add(translate'API').onMenuItemClick=function(a)
+              activity.setSharedData("MD_md",io.open(activity.getLuaDir().."/model/Doc/GPL/main.md"):read("*a"))
+              activity.newActivity("model/MD/md.lua")
+            end
+            pop.show()
+          end,
+          { AppCompatImageView,
+            layout_width='25dp',
+            layout_height='25dp',
+            layout_gravity='center',
+            src="res/more.png",
+            layout_margin='3dp',
+            colorFilter=primaryc,
+          };
+        },
+      },
+    },
+  },
+  {Space,id="top_lay",layout_width="0",layout_height="0",layout_gravity='top|right'},
+  { LinearLayout,
+    layout_width="fill",
+    layout_height="fill",
+    orientation=1,layout_margin="3dp",
+    {
+      MaterialCardView,
+      radius="8dp",
+      layout_margin="5dp",
+      layout_width="fill",
+      --layout_height="wrap",
+      strokeWidth="1dp",
+      --cardElevation="3dp",
+      --cardBackgroundColor=0,
+      {LuaEditor,
+        id="lua_edit__",
+        layout_marginTop="3dp",
+        layout_margin="10dp",
+        layout_width="fill",
+        layout_height="60%h",
+      },
+    },
+    {
+      FrameLayout,
+      layout_width="fill",
+      --layout_height="30dp",
+      {
+        MaterialButton,
+        layout_margin="12dp",
+        layout_gravity="left",
+        text=translate"API",
+        icon=getFileDrawable("sunny"),
+        onClick=function(v)
+          activity.setSharedData("MD_md",io.open(activity.getLuaDir().."/model/Doc/GPL/main.md"):read("*a"))
+          activity.newActivity("model/MD/md.lua")
+        end,
+      },
+      {
+        MaterialButton,
+        layout_margin="12dp",
+        layout_gravity="end",
+        text=translate"运行",
+        onClick=function(v)
+          lua_edit__.save()
+          activity.newActivity("GP/run")
+        end,
+      },
+    },
+  },
+}
+activity.setContentView(loadlayout(lay))

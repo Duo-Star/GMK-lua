@@ -1,0 +1,9 @@
+appname="GeoMKY"
+appver="1.0.4"
+appcode="1"
+packagename="duo.forest.gmk"
+debugmode=true
+user_permission={
+  "INTERNET",
+  "WRITE_EXTERNAL_STORAGE"
+}

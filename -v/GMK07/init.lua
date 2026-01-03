@@ -1,0 +1,9 @@
+appname="GeoMKY"
+appver="1.0"
+packagename="duo.forest.gmk"
+--OpenLuaTheme="Theme_ReOpenLua_MaterialComponent"
+debugmode=true
+user_permission={
+  "INTERNET",
+  "WRITE_EXTERNAL_STORAGE",
+}

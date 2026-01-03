@@ -1,0 +1,10 @@
+appname="GeoMKY"
+appver="1.0.6"
+appcode="1"
+packagename="duo.forest.gmk"
+theme="Theme_Material_Light_NoActionBar"
+debugmode=true
+user_permission={
+  "INTERNET",
+  "WRITE_EXTERNAL_STORAGE"
+}

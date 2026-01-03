@@ -1,0 +1,259 @@
+local demo={
+  {
+    DataDir.."/Demo/万花筒.gmk",
+    [[{"setting":{"lam":254,"o":{"y":1174.9318389893,"z":0,"x":766.80810546875},"toolInfo":{"Hyperbola":{"DOWN":{"P3":"","P2":"","P1":""}},"C":{"N":0,"UP":{"afterP1":true},"DOWN":{"P2":"","P1":""}},"M":{"zoommmmm":false,"DOWN":{"dis":100000,"HasMove":true}},"CircleT3P":{"DOWN":{"P3":"","P2":"","P1":""}},"MidP":{"P2":"","P1":""},"P":{"N":0,"DOWN":{"index":0,"dis":100000}},"Ellipse":{"DOWN":{"P3":"","P2":"","P1":""}},"Parabola":{"L":"","F":""},"L":{"N":0,"DOWN":{"P2":"","P1":""}},"Intersect":{"g1":"","g2":"","dis":100000}}},"info":{"author":"Duo","introduce":"ooo"},"gmt":{"c13":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c13","free":true,"factor":["P_13","A"]},"P_8":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_8","free":true,"factor":[{"y":0.18374951781657,"z":0,"x":-0.9829730996839}]},"P_15":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_15","free":true,"factor":[{"y":-0.67369564364656,"z":0,"x":0.73900891722066}]},"P_1":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_1","free":true,"factor":[{"y":0.36124166618715,"z":0,"x":0.93247222940436}]},"c10":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c10","free":true,"factor":["P_10","A"]},"P_12":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_12","free":true,"factor":[{"y":-0.96182564317282,"z":0,"x":-0.27366299007208}]},"P_7":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_7","free":true,"factor":[{"y":0.52643216287736,"z":0,"x":-0.85021713572961}]},"c1":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c1","free":true,"factor":["P_1","A"]},"c3":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c3","free":true,"factor":["P_3","A"]},"P_6":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_6","free":true,"factor":[{"y":0.79801722728024,"z":0,"x":-0.60263463637926}]},"c11":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c11","free":true,"factor":["P_11","A"]},"P_3":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_3","free":true,"factor":[{"y":0.89516329135506,"z":0,"x":0.44573835577654}]},"P_16":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_16","free":true,"factor":[{"y":-0.36124166618715,"z":0,"x":0.93247222940436}]},"P_5":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_5","free":true,"factor":[{"y":0.96182564317282,"z":0,"x":-0.27366299007208}]},"c8":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c8","free":true,"factor":["P_8","A"]},"P_14":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_14","free":true,"factor":[{"y":-0.89516329135506,"z":0,"x":0.44573835577654}]},"P_13":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_13","free":true,"factor":[{"y":-0.99573417629503,"z":0,"x":0.092268359463302}]},"P_4":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_4","free":true,"factor":[{"y":0.99573417629503,"z":0,"x":0.092268359463302}]},"P_9":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_9","free":true,"factor":[{"y":-0.18374951781657,"z":0,"x":-0.9829730996839}]},"A":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"A","free":true,"factor":[{"y":0,"z":0,"x":0}]},"step":["A","P_1","P_2","P_3","P_4","P_5","P_6","P_7","P_8","P_9","P_10","P_11","P_12","P_13","P_14","P_15","P_16","P_17","c1","c2","c3","c4","c5","c6","c7","c8","c9","c10","c11","c12","c13","c14","c15","c16","c17"],"c2":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c2","free":true,"factor":["P_2","A"]},"c4":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c4","free":true,"factor":["P_4","A"]},"c17":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c17","free":true,"factor":["P_17","A"]},"c12":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c12","free":true,"factor":["P_12","A"]},"c15":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c15","free":true,"factor":["P_15","A"]},"P_11":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_11","free":true,"factor":[{"y":-0.79801722728024,"z":0,"x":-0.60263463637926}]},"c14":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c14","free":true,"factor":["P_14","A"]},"c16":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c16","free":true,"factor":["P_16","A"]},"P_10":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_10","free":true,"factor":[{"y":-0.52643216287736,"z":0,"x":-0.85021713572961}]},"c5":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c5","free":true,"factor":["P_5","A"]},"c7":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c7","free":true,"factor":["P_7","A"]},"c6":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c6","free":true,"factor":["P_6","A"]},"P_2":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_2","free":true,"factor":[{"y":0.67369564364656,"z":0,"x":0.73900891722066}]},"c9":{"class":"Circle","g":{"width":8,"fill":false,"show":true,"style":"STROKE","label":false,"color":"brown"},"method":"new","name":"c9","free":true,"factor":["P_9","A"]},"P_17":{"class":"Point","g":{"width":8,"fill":false,"show":true,"style":"FILL","label":true,"color":"purple"},"method":"new","name":"P_17","free":true,"factor":[{"y":-2.4492935982947e-16,"z":0,"x":1}]}}}]]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    DataDir.."/Demo/正五边形.gmk",
+    [[{"gmt":{"P5":{"free":true,"g":{"style":"FILL","show":true,"color":"grey","fill":false,"width":8,"label":true},"factor":["L1","L2"],"method":"intersectOfLL","class":"Point","name":"P5"},"P15":{"free":true,"g":{"style":"FILL","show":true,"color":"teal","fill":false,"width":8,"label":true},"factor":["C3","C7",1],"method":"intersectOfCC","class":"Point","name":"P15"},"L10":{"free":true,"g":{"style":"STROKE","show":true,"color":"blue","fill":false,"width":8,"label":false},"factor":["P15","P6"],"method":"new","class":"Line","name":"L10"},"C2":{"free":true,"g":{"style":"STROKE","show":true,"color":"brown","fill":false,"width":8,"label":false},"factor":["P2","P1"],"method":"new","class":"Circle","name":"C2"},"P11":{"free":true,"g":{"style":"FILL","show":true,"color":"grey","fill":false,"width":8,"label":true},"factor":["C5","L1",1],"method":"intersectOfCL","class":"Point","name":"P11"},"P16":{"free":true,"g":{"style":"FILL","show":true,"color":"teal","fill":false,"width":8,"label":true},"factor":["C3","C7",2],"method":"intersectOfCC","class":"Point","name":"P16"},"P12":{"free":true,"g":{"style":"FILL","show":true,"color":"grey","fill":false,"width":8,"label":true},"factor":["C5","L1",2],"method":"intersectOfCL","class":"Point","name":"P12"},"C6":{"free":true,"g":{"style":"STROKE","show":true,"color":"brown","fill":false,"width":8,"label":false},"factor":["P6","P11"],"method":"new","class":"Circle","name":"C6"},"C8":{"free":true,"g":{"style":"STROKE","show":true,"color":"brown","fill":false,"width":8,"label":false},"factor":["P13","P6"],"method":"new","class":"Circle","name":"C8"},"C4":{"free":true,"g":{"style":"STROKE","show":true,"color":"brown","fill":false,"width":8,"label":false},"factor":["P2","P5"],"method":"new","class":"Circle","name":"C4"},"L8":{"free":true,"g":{"style":"STROKE","show":true,"color":"amber","fill":false,"width":8,"label":false},"factor":["P17","P13"],"method":"new","class":"Line","name":"L8"},"P3":{"free":true,"g":{"style":"FILL","show":true,"color":"grey","fill":false,"width":8,"label":true},"factor":["C1","C2",1],"method":"intersectOfCC","class":"Point","name":"P3"},"P1":{"free":true,"g":{"style":"FILL","show":true,"color":"purple","fill":false,"width":8,"label":true},"factor":[{"z":0,"x":-2.735,"y":-0.011666666666667}],"method":"new","class":"Point","name":"P1"},"L3":{"free":true,"g":{"style":"STROKE","show":true,"color":"blue","fill":false,"width":8,"label":false},"factor":["P9","P8"],"method":"new","class":"Line","name":"L3"},"L1":{"free":true,"g":{"style":"STROKE","show":true,"color":"blue","fill":false,"width":8,"label":false},"factor":["P1","P2"],"method":"new","class":"Line","name":"L1"},"P4":{"free":true,"g":{"style":"FILL","show":true,"color":"grey","fill":false,"width":8,"label":true},"factor":["C1","C2",2],"method":"intersectOfCC","class":"Point","name":"P4"},"P6":{"free":true,"g":{"style":"FILL","show":true,"color":"grey","fill":false,"width":8,"label":true},"factor":["C3","L2",1],"method":"intersectOfCL","class":"Point","name":"P6"},"C3":{"free":true,"g":{"style":"STROKE","show":true,"color":"red","fill":false,"width":8,"label":false},"factor":["P5","P2"],"method":"new","class":"Circle","name":"C3"},"C1":{"free":true,"g":{"style":"STROKE","show":true,"color":"brown","fill":false,"width":8,"label":false},"factor":["P1","P2"],"method":"new","class":"Circle","name":"C1"},"L5":{"free":true,"g":{"style":"STROKE","show":true,"color":"blue","fill":false,"width":8,"label":false},"factor":["P15","P6"],"method":"new","class":"Line","name":"L5"},"P14":{"free":true,"g":{"style":"FILL","show":true,"color":"teal","fill":false,"width":8,"label":true},"factor":["C6","C3",2],"method":"intersectOfCC","class":"Point","name":"P14"},"P17":{"free":true,"g":{"style":"FILL","show":true,"color":"teal","fill":false,"width":8,"label":true},"factor":["C8","C3",1],"method":"intersectOfCC","class":"Point","name":"P17"},"C7":{"free":true,"g":{"style":"STROKE","show":true,"color":"brown","fill":false,"width":8,"label":false},"factor":["P14","P6"],"method":"new","class":"Circle","name":"C7"},"L6":{"free":true,"g":{"style":"STROKE","show":true,"color":"amber","fill":false,"width":8,"label":false},"factor":["P14","P16"],"method":"new","class":"Line","name":"L6"},"C5":{"free":true,"g":{"style":"STROKE","show":true,"color":"brown","fill":false,"width":8,"label":false},"factor":["P10","P6"],"method":"new","class":"Circle","name":"C5"},"P13":{"free":true,"g":{"style":"FILL","show":true,"color":"teal","fill":false,"width":8,"label":true},"factor":["C6","C3",1],"method":"intersectOfCC","class":"Point","name":"P13"},"P7":{"free":true,"g":{"style":"FILL","show":true,"color":"grey","fill":false,"width":8,"label":true},"factor":["C3","L2",2],"method":"intersectOfCL","class":"Point","name":"P7"},"P8":{"free":true,"g":{"style":"FILL","show":true,"color":"grey","fill":false,"width":8,"label":true},"factor":["C4","C3",1],"method":"intersectOfCC","class":"Point","name":"P8"},"P9":{"free":true,"g":{"style":"FILL","show":true,"color":"grey","fill":false,"width":8,"label":true},"factor":["C4","C3",2],"method":"intersectOfCC","class":"Point","name":"P9"},"P2":{"free":true,"g":{"style":"FILL","show":true,"color":"purple","fill":false,"width":8,"label":true},"factor":[{"z":0,"x":4.0143376017559,"y":0.027318893882007}],"method":"new","class":"Point","name":"P2"},"L9":{"free":true,"g":{"style":"STROKE","show":true,"color":"amber","fill":false,"width":8,"label":false},"factor":["P13","P18"],"method":"new","class":"Line","name":"L9"},"L4":{"free":true,"g":{"style":"STROKE","show":true,"color":"amber","fill":false,"width":8,"label":false},"factor":["P14","P18"],"method":"new","class":"Line","name":"L4"},"step":["P1","P2","L1","C1","C2","P3","P4","L2","P5","C3","P6","P7","C4","P8","P9","L3","P10","C5","P11","P12","C6","P13","P14","C7","C8","P15","P16","P17","P18","L4","L5","L6","L7","L8","L9","L10"],"L2":{"free":true,"g":{"style":"STROKE","show":true,"color":"blue","fill":false,"width":8,"label":false},"factor":["P4","P3"],"method":"new","class":"Line","name":"L2"},"P18":{"free":true,"g":{"style":"FILL","show":true,"color":"grey","fill":false,"width":8,"label":true},"factor":["C8","C3",2],"method":"intersectOfCC","class":"Point","name":"P18"},"L7":{"free":true,"g":{"style":"STROKE","show":true,"color":"amber","fill":false,"width":8,"label":false},"factor":["P16","P17"],"method":"new","class":"Line","name":"L7"},"P10":{"free":true,"g":{"style":"FILL","show":true,"color":"grey","fill":false,"width":8,"label":true},"factor":["L3","L1"],"method":"intersectOfLL","class":"Point","name":"P10"}},"info":{"introduce":"ooo","author":"Duo"},"setting":{"o":{"z":0,"x":698.46298217773,"y":1178.0732421875},"toolInfo":{"MidP":{"P2":"","P1":""},"Ellipse":{"DOWN":{"P2":"","P3":"","P1":""}},"Parabola":{"F":"","L":""},"Intersect":{"g2":"","g1":"","dis":100000},"Hyperbola":{"DOWN":{"P2":"","P3":"","P1":""}},"L":{"N":10,"DOWN":{"P2":"","P1":""}},"M":{"zoommmmm":false,"DOWN":{"HasMove":false,"dis":100000}},"C":{"N":8,"UP":{"afterP1":true},"DOWN":{"P2":"","P1":""}},"P":{"N":18,"DOWN":{"dis":100000,"index":0}},"CircleT3P":{"DOWN":{"P2":"","P3":"","P1":""}}},"lam":149.09982099175}}]]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    DataDir.."/Demo/帕斯卡定理.gmk",
+    [[{"info":{"introduce":"帕斯卡定理演示","author":"GMK_Duo"},"gmt":{"P11":{"free":true,"class":"Point","g":{"style":"FILL","fill":false,"color":"grey","label":true,"width":8,"show":true},"name":"P11","method":"intersectOfLL","factor":["L6","L5"]},"P10":{"free":true,"class":"Point","g":{"style":"FILL","fill":false,"color":"grey","label":true,"width":8,"show":true},"name":"P10","method":"intersectOfLL","factor":["L3","L4"]},"step":["P1","P2","C1","P3","P4","P5","P6","P7","P8","L1","L2","P9","L3","L4","P10","L5","L6","P11","L7"],"L6":{"free":true,"class":"Line","g":{"style":"STROKE","fill":false,"color":"blue","label":false,"width":8,"show":true},"name":"L6","method":"new","factor":["P8","P6"]},"L4":{"free":true,"class":"Line","g":{"style":"STROKE","fill":false,"color":"brown","label":false,"width":8,"show":true},"name":"L4","method":"new","factor":["P5","P7"]},"L3":{"free":true,"class":"Line","g":{"style":"STROKE","fill":false,"color":"brown","label":false,"width":8,"show":true},"name":"L3","method":"new","factor":["P3","P6"]},"L2":{"free":true,"class":"Line","g":{"style":"STROKE","fill":false,"color":"teal","label":false,"width":8,"show":true},"name":"L2","method":"new","factor":["P4","P3"]},"L1":{"free":true,"class":"Line","g":{"style":"STROKE","fill":false,"color":"teal","label":false,"width":8,"show":true},"name":"L1","method":"new","factor":["P7","P8"]},"P4":{"free":true,"class":"Point","g":{"style":"STROKE","fill":false,"color":"grey","label":true,"width":8,"show":true},"name":"P4","method":"index_Circle","factor":["C1",1.0168783668424]},"P3":{"free":true,"class":"Point","g":{"style":"STROKE","fill":false,"color":"grey","label":true,"width":8,"show":true},"name":"P3","method":"index_Circle","factor":["C1",0.25952586913514]},"P2":{"free":true,"class":"Point","g":{"style":"FILL","fill":false,"color":"purple","label":true,"width":8,"show":true},"name":"P2","method":"new","factor":[{"x":-2.2680501510846,"y":2.2344640783039,"z":0}]},"P1":{"free":true,"class":"Point","g":{"style":"FILL","fill":false,"color":"purple","label":true,"width":8,"show":true},"name":"P1","method":"new","factor":[{"x":-0.96666666666667,"y":0.85333333333333,"z":0}]},"C1":{"free":true,"class":"Circle","g":{"style":"STROKE","fill":false,"color":"red","label":false,"width":8,"show":true},"name":"C1","method":"new","factor":["P1","P2"]},"P6":{"free":true,"class":"Point","g":{"style":"STROKE","fill":false,"color":"grey","label":true,"width":8,"show":true},"name":"P6","method":"index_Circle","factor":["C1",-0.21593484468945]},"P7":{"free":true,"class":"Point","g":{"style":"STROKE","fill":false,"color":"grey","label":true,"width":8,"show":true},"name":"P7","method":"index_Circle","factor":["C1",-1.7007430624323]},"P8":{"free":true,"class":"Point","g":{"style":"STROKE","fill":false,"color":"grey","label":true,"width":8,"show":true},"name":"P8","method":"index_Circle","factor":["C1",-1.0050459930309]},"L5":{"free":true,"class":"Line","g":{"style":"STROKE","fill":false,"color":"blue","label":false,"width":8,"show":true},"name":"L5","method":"new","factor":["P5","P4"]},"P9":{"free":true,"class":"Point","g":{"style":"FILL","fill":false,"color":"grey","label":true,"width":8,"show":true},"name":"P9","method":"intersectOfLL","factor":["L2","L1"]},"L7":{"free":true,"class":"Line","g":{"style":"STROKE","fill":false,"color":"amber","label":false,"width":8,"show":true},"name":"L7","method":"new","factor":["P10","P9"]},"P5":{"free":true,"class":"Point","g":{"style":"STROKE","fill":false,"color":"grey","label":true,"width":8,"show":true},"name":"P5","method":"index_Circle","factor":["C1",-3.050932766389]}},"setting":{"o":{"x":793.83511352539,"y":1241.1905670166,"z":0},"lam":134.34296445842,"toolInfo":{"Intersect":{"g1":"","g2":"","dis":100000},"L":{"DOWN":{"P2":"","P1":""},"N":7},"Hyperbola":{"DOWN":{"P3":"","P2":"","P1":""}},"C":{"DOWN":{"P2":"","P1":""},"UP":{"afterP1":false},"N":1},"Ellipse":{"DOWN":{"P3":"","P2":"","P1":""}},"Parabola":{"L":"","F":""},"CircleT3P":{"DOWN":{"P3":"","P2":"","P1":""}},"P":{"DOWN":{"dis":100000,"index":0},"N":11},"M":{"DOWN":{"dis":100000,"HasMove":false},"zoommmmm":false},"MidP":{"P2":"","P1":""}}}}]]
+  },
+
+
+
+
+
+
+
+
+
+
+
+  {
+    DataDir.."/Demo/绘图脚本.lua",
+    [[require "model.graph"
+
+function 😀(a)
+  local 💦={
+    ['💩']=Vector(1,1),
+    
+    Curve(function(t)
+      return Vector(3,3)+Vector(sin(2*t+a),cos(a*t))
+    end,{0,10*pi}),
+
+    Curve(function(😍)
+      return Vector((16*sin(😍)^3)*0.2,(13 * cos(😍) - 5 * cos(2*😍) - 2 * cos(3*😍) - cos(4*😍))*0.2)
+    end,{0,2*pi}),
+
+    Curve(function(t)
+      return Vector(-3,3)+Vector(cos(t),sin(t))*sin(a*t)
+    end,{0,10*pi}),
+
+    cos,
+
+    function(😅)
+      return 😅/(sin(😅)+2)
+    end,
+
+    Conic0(Vector(1,4),Vector(2,3),Vector(0,1))
+
+  }
+
+  graph.setData(💦)
+
+end
+
+👀"拖动滑动条"
+
+😀(0)
+
+var_a.addOnChangeListener({
+  onValueChange=function(view,value,bool)
+    😈=tonumber(value)
+    😀(😈)
+  end
+})
+]]
+  },
+
+  {
+    DataDir.."/Demo/验证托勒密定理.gp",
+    [[ξ 验证托勒密定理
+$ Circle c
+@ Point P is in c
+@ Line l1 is cross P
+@ Line l2 is cross P
+! (l1.v):isParallel(l2.v)
+ξ 骈点
+@ DPoint AC_ is insCL of c,l1
+@ DPoint BD_ is insCL of c,l2
+ξ 获得交点
+@ Point A is index_DPoint of AC_,`1`
+@ Point C is index_DPoint of AC_,`2`
+@ Point B is index_DPoint of BD_,`1`
+@ Point D is index_DPoint of BD_,`2`
+ξ 检验结论
+? Is.Equal( #(A-C)*#(B-D) , #(A-D)*#(B-C) + #(A-B)*#(C-D) )
+]]
+  },
+
+
+  {
+    DataDir.."/Demo/怪题.gp",
+    [[ξ 原题在这里：
+ξ【斜角坐标系制裁初中几何题-哔哩哔哩】 https://b23.tv/kfAcIUM
+$ Point A
+$ Point B
+$ Point C
+! Vector.is3PCollinear(A,B,C) or #(A-C)<#(A-B)
+@ Line BA is new of B,A
+@ Line CA is new of C,A
+@ Line BC is new of B,C
+@ Line AD is angleBisector of B,A,C
+@ Point D is insLL of AD,BC
+
+@ Point E is move of C,CA,BA
+@ Point N is midP of A,E
+@ Point M is midP of B,C
+@ Line MN is new of M,N
+
+? (AD.v):isParallel(MN.v)]]
+  },
+
+  {
+    DataDir.."/Demo/三角形中位线为底边一半.gp",
+    [[ξ 三角形中位线为底边一半
+$ Point A
+$ Point B
+$ Point C
+! Vector.is3PCollinear(A,B,C)
+@ Point D is midP of A,B
+@ Point E is midP of A,C
+? Is.Equal( #(D-E)*2 , #(B-C) )]]
+  },
+
+  {
+    DataDir.."/Demo/勾股.gp",
+    [[ξ 勾股
+@ Triangle t is Right
+? Is.Equal( (#(t.a-t.b))^2 + (#(t.a-t.c))^2 , (#(t.b-t.c))^2 )]]
+  },
+
+
+
+
+
+
+}
+return demo

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "575932462071",
+    "project_id": "geomky-6741b",
+    "storage_bucket": "geomky-6741b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575932462071:android:42046fb89d26a4444c34f2",
+        "android_client_info": {
+          "package_name": "duo.forest.gmk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0o3yNu3GsrSe_H6LOdTU-6Vxh1vfaAKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

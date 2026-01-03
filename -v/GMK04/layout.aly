@@ -1,0 +1,66 @@
+{CoordinatorLayout,
+  w="match_parent",
+  h="match_parent",
+  {AppBarLayout,
+    w="match_parent",
+    layout_height="250dp",
+
+    {CollapsingToolbarLayout,
+      layout_scrollFlags="scroll|exitUtilCollapsed|snap",
+      w="match_parent",
+      h="200dp",
+      --[[
+      {
+        ImageView,
+        id="logo",
+        src="Golang.png",
+        w="match_parent",
+        h="256dp",
+        layout_marginTop="0dp",
+      },
+    --]]
+      {MaterialTextView,
+        layout_margin="12dp",
+        layout_gravity="center",
+        textSize="30sp",
+        textColor=cc.c.primary,
+        text="Geometry Monkey",
+      },
+
+    },
+    {LinearLayout,
+      Visibility=8,
+      id="画布id",
+      w="64dp",
+      h="64dp"
+    },
+    {MaterialTextView,
+      layout_margin="12dp",
+      layout_gravity="center",
+      textSize="18sp",
+      textColor=cc.c.on_background,
+      text="猴子：莎士比亚全集一时半会打不出来，但是帮你解个几何题还是绰绰有余",
+    },
+
+
+  },
+
+  {RecyclerView,
+    id="rec",
+    layout_behavior="@string/appbar_scrolling_view_behavior",
+
+  },
+
+  {
+    FloatingActionButton;
+    id="fab";
+    --text="💡",
+    --设置图片
+    src="add.png",
+    layout_gravity="bottom|end",
+    layout_marginBottom="64dp",
+    layout_marginEnd="16dp",
+  },
+
+}
+

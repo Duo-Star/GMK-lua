@@ -1,0 +1,959 @@
+
+layout={
+  CoordinatorLayout,
+  layout_width="fill",
+  layout_height="fill",
+  {
+    NestedScrollView,
+    layout_width="fill",
+    layout_height="fill",
+    fillViewport="true",
+    backgroundColor=backgroundc,
+    {
+      LinearLayoutCompat,
+      id="rootLay",
+      layout_width="fill",
+      layout_height="fill",
+      orientation="vertical",
+      {
+        ViewPager,
+        id="vpg",
+        layout_width="fill",
+        layout_height="fill",
+        pages={
+          {
+            NestedScrollView,
+            layout_width="fill",
+            layout_height="fill",
+            fillViewport="true",
+            backgroundColor=backgroundc,
+            {
+              LinearLayoutCompat,
+              layout_width="fill",
+              layout_height="fill",
+              orientation="vertical",
+              layoutTransition=LayoutTransition().enableTransitionType(LayoutTransition.CHANGING),
+              {
+                MaterialTextView,
+                layout_marginTop="35dp",
+                layout_gravity="top|center",
+                text="GeoMKY",
+                singleLine="true",
+                textSize="55sp",
+                textColor=primaryc,
+                Typeface=jost_medium_typeface,
+              },
+              {
+                MaterialTextView,
+                layout_marginTop="14dp",
+                layout_margin="8dp",
+                layout_gravity="center",
+                text=translate"探索神圣几何的城堡",
+                singleLine="true",
+                textSize="23sp",
+                Typeface=jost_book_typeface,
+              },
+              {Space,
+                layout_height="35dp",
+              },
+              {
+                MaterialTextView,
+                layout_margin="16dp",
+                layout_gravity="center|left",
+                text=translate"借助您面前这台机器的计算能力，以及MathForest引擎，让我们开始吧!",
+                textSize="18sp",
+                Typeface=jost_book_typeface,
+                textColor=themeUtil.getColorOutline(),
+              },
+              { MaterialCardView,
+                layout_height="50dp",
+                layout_width="fill",
+                radius="3dp",
+                cardElevation=0,
+                strokeWidth=dp2px(0),
+                strokeColor=themeUtil.getColorPrimaryContainer(),
+                layout_marginLeft='25dp',
+                layout_marginRight='25dp',
+                cardBackgroundColor=(0),
+                layout_gravity="top|center",
+                onClick=function()
+                  newGMK()
+                end,
+                {
+                  MaterialTextView,
+                  layout_marginLeft="10dp",
+                  layout_gravity="center|left",
+                  text=translate"> 交互式几何工具",
+                  textSize="18sp",
+                  Typeface=jost_book_typeface,
+                  textColor=primaryc,
+                },
+              },
+              { MaterialCardView,
+                layout_height="50dp",
+                layout_width="fill",
+                radius="3dp",
+                cardElevation=0,
+                strokeWidth=0,
+                strokeColor=themeUtil.getColorPrimaryContainer(),
+                layout_marginLeft='25dp',
+                layout_marginRight='25dp',
+                cardBackgroundColor=(0),
+                layout_gravity="top|center",
+                onClick=function()
+                  newGP()
+                end,
+                {
+                  MaterialTextView,
+                  layout_marginLeft="10dp",
+                  layout_gravity="center|left",
+                  text=translate"> 几何证明",
+                  textSize="18sp",
+                  Typeface=jost_book_typeface,
+                  textColor=primaryc,
+                },
+              },
+              { MaterialCardView,
+                layout_height="50dp",
+                layout_width="fill",
+                radius="3dp",
+                cardElevation=0,
+                strokeWidth=dp2px(0),
+                strokeColor=themeUtil.getColorPrimaryContainer(),
+                layout_marginLeft='25dp',
+                layout_marginRight='25dp',
+                cardBackgroundColor=(0),
+                layout_gravity="top|center",
+                onClick=function()
+                  newLua()
+                end,
+                {
+                  MaterialTextView,
+                  layout_marginLeft="10dp",
+                  layout_gravity="center|left",
+                  text=translate"> 编码",
+                  textSize="18sp",
+                  Typeface=jost_book_typeface,
+                  textColor=primaryc,
+                },
+              },
+              {
+                MaterialCardView,
+                radius="16dp",layout_margin="25dp",
+                layout_marginTop="24dp",
+                layout_width="fill",
+                layout_height="wrap",
+                --strokeWidth="0dp",--设置边框宽度
+                Visibility=(8),
+                {
+                  LinearLayoutCompat,
+                  orientation="vertical",
+                  layout_width="fill",
+                  layout_height="wrap",
+                  padding="16dp",
+                  {
+                    LinearLayoutCompat,
+                    layout_width="fill",
+                    layout_height="wrap",
+                    gravity="center",
+                    {
+                      AppCompatImageView,
+                      layout_width="55dp",
+                      layout_height="55dp",
+                      padding="10dp",
+                      paddingStart="0",
+                      colorFilter=primaryc,
+                      src="res/Duo.png",
+                    },
+                    {
+                      MaterialTextView,
+                      layout_width="fill",
+                      paddingEnd="16dp",
+                      Typeface=jost_book_typeface,
+                      text=translate"Duo: \n注意，您目前看到的是GMK 1.0.3\n欢迎捉虫子！",Typeface=jost_book_typeface,
+                      textSize="16sp",
+                    },
+                  },
+                  {
+                    MaterialButton,
+                    layout_marginTop="12dp",
+                    layout_gravity="end",
+                    text=translate"ok,开捉!",
+                    onClick=function(v)
+                      v.getParent().getParent().setVisibility(8)
+                    end,
+                  },
+                },
+              },
+
+              {
+                MaterialTextView,
+                layout_margin="16dp",
+                layout_gravity="center|left",
+                text=[[此版本开放了之前开发的Sun科学计算器。]],
+                textSize="18sp",
+                Typeface=jost_book_typeface,
+                textColor=ColorOutline,
+              },
+
+              {
+                MaterialCardView,
+                radius="16dp",
+                layout_margin="25dp",
+                layout_marginTop="10dp",
+                layout_width="fill",
+                layout_height="wrap",
+                --strokeWidth="0dp",--设置边框宽度
+
+                {
+                  LinearLayoutCompat,
+                  orientation="vertical",
+                  layout_width="fill",
+                  layout_height="wrap",
+                  padding="16dp",
+                  {
+                    LinearLayoutCompat,
+                    layout_width="fill",
+                    --layout_height="wrap",
+                    gravity="center",
+                    {
+                      AppCompatImageView,
+                      layout_width="55dp",
+                      layout_height="55dp",
+                      padding="5dp",
+                      paddingStart="0",
+                      src="res/imgs/Sun.png",
+                    },
+                    {
+                      MaterialTextView,
+                      layout_width="fill",
+                      paddingEnd="12dp",
+                      Typeface=jost_book_typeface,
+                      text="在这里像命令行一样进行科学计算\n利用内置的Math Forest帮助你解决 数值计算，几何，概率，统计 等许多问题",
+                      textSize="16sp",
+                    },
+                  },
+                  {
+                    MaterialButton,
+                    layout_marginTop="12dp",
+                    layout_gravity="end",
+                    text="启动Sun",
+                    onClick=function(v)
+                      activity.newActivity("Sun/main")
+                    end,
+                  },
+                },
+              },
+
+
+              {
+                MaterialTextView,
+                layout_margin="16dp",
+                layout_gravity="center|left",
+                text=translate[[关于GMK的任何问题，请看这里]],
+                textSize="18sp",
+                Typeface=jost_book_typeface,
+                textColor=ColorOutline,
+              },
+              { MaterialCardView,
+                layout_height="80dp",
+                layout_width="fill",
+                radius="9dp",
+                cardElevation=0,
+                strokeWidth=dp2px(0),
+                strokeColor=themeUtil.getColorPrimaryContainer(),
+                layout_marginLeft='25dp',
+                layout_marginRight='25dp',
+                cardBackgroundColor=themeUtil.getColorSecondaryContainer(),
+                layout_gravity="top|center",
+                onClick=function()
+                  activity.setSharedData("MD_md",io.open(activity.getLuaDir().."/model/Doc/GPL/main.md"):read("*a"))
+                  activity.newActivity("model/MD/md.lua")
+                end,
+                {
+                  LinearLayoutCompat,
+                  layout_width="fill",
+                  layout_height="fill",
+                  layout_gravity="center",
+                  orientation="0",
+                  {
+                    AppCompatImageView,
+                    layout_width="30dp",
+                    layout_height="30dp",
+                    layout_marginLeft="18dp",
+                    colorFilter=primaryc,
+                    src="res/star.png",
+                    layout_gravity="center",
+                  },
+                  {
+                    MaterialTextView,
+                    layout_width="fill",
+                    layout_gravity="center",
+                    layout_marginLeft="18dp",
+                    textColor=primaryc,
+                    text=translate"API 文档",
+                    Typeface=jost_medium_typeface,
+                    textSize="22sp",
+                  },
+                },
+              },
+              {
+                MaterialTextView,
+                layout_margin="16dp",
+                layout_gravity="center|left",
+                text=translate[[正所谓孤木不成林，很高兴与独一无二的你交流互鉴！我们的APP也将在这里发布更新]],
+                textSize="18sp",
+                Typeface=jost_book_typeface,
+                textColor=ColorOutline,
+              },
+              { MaterialCardView,
+                layout_height="50dp",
+                layout_width="fill",
+                radius="3dp",
+                cardElevation=0,
+                strokeWidth=dp2px(0),
+                strokeColor=themeUtil.getColorPrimaryContainer(),
+                layout_marginLeft='25dp',
+                layout_marginRight='25dp',
+                cardBackgroundColor=(0),
+                layout_gravity="top|center",
+                onClick=function()
+                  加QQ群(663251235)
+                end,
+                {
+                  MaterialTextView,
+                  layout_marginLeft="10dp",
+                  layout_gravity="center|left",
+                  text=translate"> 加入QQ群组",
+                  textSize="18sp",
+                  Typeface=jost_book_typeface,
+                  textColor=primaryc,
+                },
+              },
+
+              {
+                MaterialTextView,
+                layout_marginTop="16dp",
+                layout_margin="10dp",
+                layout_gravity="center|left",
+                text=translate[[关于GeoMKY]],
+                textSize="22sp",
+                Typeface=jost_book_typeface,
+                textColor=primaryc,
+              },
+              {
+                MaterialTextView,
+                layout_margin="16dp",
+                layout_marginTop="5dp",
+                layout_gravity="center|left",
+                text=translate[[精心打造的几何软件，全称Geometry Monkey。旨在利用现代计算机的强大计算能力，帮助我们直观，便捷地探索几何世界。
+几何是广泛的，它总会出现在生活的各个角落。它是美丽的，总是用最简洁的元素组成令人惊叹的结构。
+如果你使用过GeoGebra,Desmos，你会发现，虽然它们都具有强大的计算与作图能力，但他们对于编程的支持并不突出。GeoMKY开放了以Lua为语言的编程接口，通过MathForest内置的数学计算api控制几何元素的呈现。
+当然，你也可以使用我们的绘图库实现动画演示，简单游戏开发，等等更精彩的想法！
+让我们开启几何之旅吧 (๑>؂<๑）[Duo 2024.7.31] ]],
+                textSize="18sp",
+                Typeface=jost_book_typeface,
+                textColor=ColorOutline,
+              },
+
+              { SeaDivider,
+                layout_width="fill",
+                layout_height="60dp",
+                layout_gravity="center",
+                backgroundColor=backgroundc,
+                waveColor=primaryc,
+                wavePadding=dp2px(20),
+                waveSpeed=1,
+              },
+
+              {
+                MaterialTextView,
+                layout_gravity="center",
+                --textColor=primaryc,
+                text="GeoMKY 2024 Duo",
+                Typeface=jost_medium_typeface,
+                textSize="18sp",
+                onClick=function()
+                  if eggN>=5
+                    eggN=0                    
+                    activity.newActivity("Home/egg/"..math.random(1,5))
+                   else
+                    eggN=eggN+1
+                  end
+                end
+              },
+
+
+
+              { Space,
+                layout_height="100dp",
+              },
+            },
+
+          },
+          {
+            LinearLayoutCompat,
+            layout_width="fill",
+            layout_height="fill",
+            orientation="vertical",
+            padding="16dp",
+            {
+              LinearLayoutCompat,
+              layout_width="fill",
+              orientation="0",
+              {
+                MaterialTextView,
+                text="Files",
+                id="Dir_tv",
+                textStyle="bold",
+                textSize="46sp",
+                Typeface=jost_medium_typeface,
+              },
+              {
+                MaterialTextView,
+                text="",
+                id="Dir_Second_tv",
+                textStyle="bold",
+                textSize="30sp",
+                Typeface=jost_medium_typeface,
+                textColor=ColorOutline,
+              },
+              {
+                Space,
+                layout_weight="1",
+              },
+              {MaterialCardView,
+                layout_width='45dp',
+                layout_height='45dp',
+                CardBackgroundColor=0,
+                radius="30dp",strokeColor=0,strokeWidth=0,
+                cardElevation="0dp",
+                layout_margin='5dp';
+                onClick=function()
+                  local pop=PopupMenu(activity,file_more)
+                  local menu=pop.Menu
+                  menu.add('名称'..(function(s) if s return "✔" else return "" end end)( activity.getSharedData("SortOrder")=="名称") ).onMenuItemClick=function(a)
+                    activity.setSharedData("SortOrder","名称")
+                    task(200,function() reLoad() end)
+                  end
+                  menu.add('时间'..(function(s) if s return "✔" else return "" end end)( activity.getSharedData("SortOrder")=="时间") ).onMenuItemClick=function(a)
+                    activity.setSharedData("SortOrder","时间")
+                    task(200,function() reLoad() end)
+                  end
+                  menu.add('瞎排'..(function(s) if s return "✔" else return "" end end)( activity.getSharedData("SortOrder")=="瞎排") ).onMenuItemClick=function(a)
+                    activity.setSharedData("SortOrder","瞎排")
+                    task(200,function() reLoad() end)
+                  end
+                  pop.show()
+
+                end,
+                { AppCompatImageView,
+                  layout_width='25dp',
+                  layout_height='25dp',
+                  layout_gravity='center',
+                  src="res/format.png",
+                  layout_margin='3dp',
+                  colorFilter=primaryc,
+                };
+              },
+              {MaterialCardView,
+                layout_width='45dp',
+                layout_height='45dp',
+                CardBackgroundColor=0,
+                radius="30dp",strokeColor=0,strokeWidth=0,
+                cardElevation="0dp",
+                layout_margin='5dp',id="file_more",
+                onClick=function()
+                  local pop=PopupMenu(activity,file_more)
+                  local menu=pop.Menu
+                  menu.add(translate'导入').onMenuItemClick=function(a)
+                    导入_()
+                  end
+                  menu.add(translate'加载').onMenuItemClick=function(a)
+                    local pop=PopupMenu(activity,file_more)
+                    local menu=pop.Menu
+                    menu.add(translate'官方Demo').onMenuItemClick=function(a)
+                      local demo=import "Home/demoData"
+                      for i=1,#demo do
+                        local item=demo[i]
+                        if not(File(item[1]).exists())
+                          写入文件(item[1],item[2])
+                        end
+                      end
+                      task(100,function() reLoad() print("ok") end)
+                    end
+                    pop.show()
+                  end
+                  menu.add(translate'新建').onMenuItemClick=function(a)
+                    local pop=PopupMenu(activity,file_more)
+                    local menu=pop.Menu
+                    menu.add(translate"> 交互式几何工具").onMenuItemClick=function(a)
+                      newGMK()
+                    end
+                    menu.add(translate"> 几何证明").onMenuItemClick=function(a)
+                      newGP()
+                    end
+                    menu.add(translate"> 编码").onMenuItemClick=function(a)
+                      newLua()
+                    end
+                    menu.add(translate"文件夹").onMenuItemClick=function(a)
+                      newFolder()
+                    end
+                    pop.show()
+                  end
+                  pop.show()
+                end,
+                { AppCompatImageView,
+                  layout_width='25dp',
+                  layout_height='25dp',
+                  layout_gravity='center',
+                  src="res/more.png",
+                  layout_margin='3dp',
+                  colorFilter=primaryc,
+                };
+              },
+
+
+            },
+            {Space,
+              layout_height="20dp",
+            },
+            { SwipeRefreshLayout,
+              id="fresh",
+              layout_width="match_parent",
+              layout_height="match_parent",
+              layout_marginLeft="12dp",
+              layout_marginRight="12dp",
+              layout_marginBottom="60dp",
+              { FrameLayout,
+                layout_width = 'fill',
+                layout_height = 'fill',
+                { RecyclerView,
+                  id="file_rec",
+                  layout_width="fill",
+                  layout_height="fill",
+                },
+                {
+                  MaterialTextView,
+                  text="创建你的第一个文件\n或从 更多>加载>官方Demo 中加载示例",
+                  id="noneFile_tv",
+                  textStyle="bold",
+                  textSize="16sp",
+                  layout_gravity='center',
+                  Typeface=jost_medium_typeface,
+                  textColor=ColorOutline,
+                },
+              }
+
+            },
+
+
+          },
+          {
+            NestedScrollView,
+            layout_width="fill",
+            layout_height="fill",
+            {
+              LinearLayoutCompat,
+              orientation="vertical",
+              layout_width="fill",
+              layout_height="fill",
+              padding="16dp",
+              layoutTransition=LayoutTransition().enableTransitionType(LayoutTransition.CHANGING),
+              {
+                MaterialTextView,
+                text="Settings",
+                textStyle="bold",
+                textSize="46sp",
+                Typeface=jost_medium_typeface,
+              },
+              {Space,
+                layout_height="30dp",
+              },
+              {
+                MaterialTextView,
+                text="界面",
+                textStyle="bold",
+                textSize="16sp",
+                Typeface=jost_book_typeface,
+                textColor=primaryc,
+              },
+              {
+                LinearLayoutCompat,
+                layout_marginTop="12dp",
+                layout_marginLeft="12dp",
+                layout_width="fill",
+                layout_height="wrap",
+                gravity="center",
+                {
+                  LinearLayoutCompat,
+                  orientation="vertical",
+                  layout_width="wrap",
+                  layout_height="wrap",
+                  {
+                    MaterialTextView,
+                    text="夜?",
+                    textStyle="bold",
+                    textSize="18sp",
+                  },
+                  {
+                    MaterialTextView,
+                    text="切换浅色与深色模式",
+                    textSize="13sp",
+                    textColor=ColorOutline,
+                  },
+                },
+                {
+                  Space,
+                  layout_weight="1",
+                },
+                {
+                  MaterialSwitch,
+                  id="切换浅色与深色模式sw",
+                },
+              },
+              {
+                LinearLayoutCompat,
+                layout_marginTop="12dp",
+                layout_marginLeft="12dp",
+                layout_width="fill",
+                layout_height="wrap",
+                gravity="center",
+                {
+                  LinearLayoutCompat,
+                  orientation="vertical",
+                  layout_width="wrap",
+                  layout_height="wrap",
+                  {
+                    MaterialTextView,
+                    text="双列显示",
+                    textStyle="bold",
+                    textSize="18sp",
+                  },
+                  {
+                    MaterialTextView,
+                    text="文件列表界面双列",
+                    textSize="13sp",
+                    textColor=ColorOutline,
+                  },
+                },
+                {
+                  Space,
+                  layout_weight="1",
+                },
+                {
+                  MaterialSwitch,
+                  id="双列显示sw",
+                },
+              },
+              {
+                LinearLayoutCompat,
+                layout_marginTop="12dp",
+                layout_marginLeft="12dp",
+                layout_width="fill",
+                layout_height="wrap",
+                gravity="center",
+                id="语言",
+                onClick=function()
+                  local pop=PopupMenu(activity,语言)
+                  local menu=pop.Menu
+                  menu.add("zh").onMenuItemClick=function(a)
+                    语言text.text="zh"
+                    activity.setSharedData("Language","zh")
+                    bottombar.getMenu().getItem(0).setChecked(true)
+                    vpg.setCurrentItem(0,true)
+                    task(1200,function()
+                      activity.recreate()end)
+                  end
+                  menu.add("en").onMenuItemClick=function(a)
+                    语言text.text="en"
+                    activity.setSharedData("Language","en")
+                    bottombar.getMenu().getItem(0).setChecked(true)
+                    vpg.setCurrentItem(0,true)
+                    task(1200,function()
+                      activity.recreate()end)
+                  end
+                  pop.show()
+                end,
+                {
+                  LinearLayoutCompat,
+                  orientation="vertical",
+                  layout_width="wrap",
+                  layout_height="wrap",
+                  {
+                    MaterialTextView,
+                    text="语言",
+                    textStyle="bold",
+                    textSize="18sp",
+                  },
+                  {
+                    MaterialTextView,
+                    text="zh",
+                    id="语言text",
+                    textSize="13sp",
+                    textColor=ColorOutline,
+                  },
+                },
+                {
+                  Space,
+                  layout_weight="1",
+                },
+              },
+              {Space,
+                layout_height="30dp",
+              },
+              {
+                MaterialTextView,
+                text="证明",
+                textStyle="bold",
+                textSize="16sp",
+                Typeface=jost_book_typeface,
+                textColor=primaryc,
+              },
+              {
+                LinearLayoutCompat,
+                layout_marginTop="12dp",
+                layout_marginLeft="12dp",
+                layout_width="fill",
+                layout_height="wrap",
+                gravity="center",
+                id="策略",
+                onClick=function()
+                  local pop=PopupMenu(activity,策略)
+                  local menu=pop.Menu
+                  menu.add("承认浮点误差").onMenuItemClick=function(a)
+                    判定策略text.text="承认浮点误差"
+                    activity.setSharedData("GP_tactics","承认浮点误差")
+                  end
+                  menu.add("严格判定").onMenuItemClick=function(a)
+                    判定策略text.text="严格判定"
+                    activity.setSharedData("GP_tactics","严格判定")
+                  end
+                  pop.show()
+                end,
+                {
+                  LinearLayoutCompat,
+                  orientation="vertical",
+                  layout_width="wrap",
+                  layout_height="wrap",
+                  {
+                    MaterialTextView,
+                    text="判定策略",
+                    textStyle="bold",
+                    textSize="18sp",
+                  },
+                  {
+                    MaterialTextView,
+                    text="自动",
+                    id="判定策略text",
+                    textSize="13sp",
+                    textColor=ColorOutline,
+                  },
+                },
+                {
+                  Space,
+                  layout_weight="1",
+                },
+              },
+              {
+                LinearLayoutCompat,
+                layout_marginTop="12dp",
+                layout_marginLeft="12dp",
+                layout_width="fill",
+                layout_height="wrap",
+                gravity="center",
+                id="数量",
+                onClick=function()
+                  local pop=PopupMenu(activity,数量)
+                  local menu=pop.Menu
+                  local like={"1","100","1e3","1e5","1e6"}
+                  for i=1,#like do
+                    menu.add(like[i]).onMenuItemClick=function(a)
+                      local n=math.floor(tonumber(like[i]))
+                      数量text.text=like[i]
+                      activity.setSharedData("GP_N",like[i])
+                    end
+                  end
+                  pop.show()
+                end,
+                {
+                  LinearLayoutCompat,
+                  orientation="vertical",
+                  layout_width="wrap",
+                  layout_height="wrap",
+                  {
+                    MaterialTextView,
+                    text="数量",
+                    textStyle="bold",
+                    textSize="18sp",
+                  },
+                  {
+                    MaterialTextView,
+                    text="1e5",
+                    id="数量text",
+                    textSize="13sp",
+                    textColor=ColorOutline,
+                  },
+                },
+                {
+                  Space,
+                  layout_weight="1",
+                },
+              },
+              {
+                LinearLayoutCompat,
+                layout_marginTop="12dp",
+                layout_marginLeft="12dp",
+                layout_width="fill",
+                layout_height="wrap",
+                gravity="center",
+                id="临界",
+                onClick=function()
+                  local pop=PopupMenu(activity,临界)
+                  local menu=pop.Menu
+                  local like={"0.75","0.98","1"}
+                  for i=1,#like do
+                    menu.add(like[i]).onMenuItemClick=function(a)
+                      local n=math.floor(tonumber(like[i]))
+                      临界text.text=like[i]
+                      activity.setSharedData("GP_critical_phi",like[i])
+                    end
+                  end
+                  pop.show()
+                end,
+                {
+                  LinearLayoutCompat,
+                  orientation="vertical",
+                  layout_width="wrap",
+                  layout_height="wrap",
+                  {
+                    MaterialTextView,
+                    text="φ临界",
+                    textStyle="bold",
+                    textSize="18sp",
+                  },
+                  {
+                    MaterialTextView,
+                    text="¿",
+                    id="临界text",
+                    textSize="13sp",
+                    textColor=ColorOutline,
+                  },
+                },
+                {
+                  Space,
+                  layout_weight="1",
+                },
+              },
+              {Space,
+                layout_height="30dp",
+              },
+              {
+                MaterialTextView,
+                text="关于",
+                textStyle="bold",
+                textSize="16sp",
+                Typeface=jost_book_typeface,
+                textColor=primaryc,
+              },
+              { MaterialCardView,
+                layout_height="50dp",
+                layout_width="fill",
+                radius="3dp",
+                cardElevation=0,
+                strokeWidth=dp2px(0),
+                strokeColor=themeUtil.getColorPrimaryContainer(),
+                layout_marginLeft='25dp',
+                layout_marginRight='25dp',
+                cardBackgroundColor=(0),
+                layout_gravity="top|center",
+                onClick=function()
+                  activity.setSharedData("MD_md",io.open(activity.getLuaDir().."/model/Doc/Duo.md"):read("*a"))
+                  activity.newActivity("model/MD/md.lua")
+                end,
+                {
+                  MaterialTextView,
+                  layout_marginLeft="10dp",
+                  layout_gravity="center|left",
+                  text="> Duooo",
+                  textSize="18sp",
+                  Typeface=jost_book_typeface,
+                  textColor=primaryc,
+                },
+              },
+              { MaterialCardView,
+                layout_height="50dp",
+                layout_width="fill",
+                radius="3dp",
+                cardElevation=0,
+                strokeWidth=dp2px(0),
+                strokeColor=themeUtil.getColorPrimaryContainer(),
+                layout_marginLeft='25dp',
+                layout_marginRight='25dp',
+                cardBackgroundColor=(0),
+                layout_gravity="top|center",
+                onClick=function()
+                  activity.setSharedData("MD_md",io.open(activity.getLuaDir().."/model/Doc/Changelog.md"):read("*a"))
+                  activity.newActivity("model/MD/md.lua")
+                end,
+                {
+                  MaterialTextView,
+                  layout_marginLeft="10dp",
+                  layout_gravity="center|left",
+                  text="> 更新日志",
+                  textSize="18sp",
+                  Typeface=jost_book_typeface,
+                  textColor=primaryc,
+                },
+              },
+              { MaterialCardView,
+                layout_height="50dp",
+                layout_width="fill",
+                radius="3dp",
+                cardElevation=0,
+                strokeWidth=dp2px(0),
+                strokeColor=themeUtil.getColorPrimaryContainer(),
+                layout_marginLeft='25dp',
+                layout_marginRight='25dp',
+                cardBackgroundColor=(0),
+                layout_gravity="top|center",
+                onClick=function()
+                  加QQ群(663251235)
+                end,
+                {
+                  MaterialTextView,
+                  layout_marginLeft="10dp",
+                  layout_gravity="center|left",
+                  text="> 加入QQ群组",
+                  textSize="18sp",
+                  Typeface=jost_book_typeface,
+                  textColor=primaryc,
+                },
+              },
+
+
+
+
+              {Space,
+                layout_height="100dp",
+              },
+
+
+            },
+          },
+        },
+      },
+    },
+  },
+  {
+    BottomNavigationView,
+    id="bottombar",
+    layout_gravity="bottom",
+    layout_width="fill",
+    layout_height="wrap",
+  },
+
+}
+
+--设置布局
+activity.setContentView(loadlayout(layout))
